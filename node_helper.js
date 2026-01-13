@@ -561,7 +561,7 @@ module.exports = NodeHelper.create({
 
   screenshot: function(sessionId = null, callback=null) {
     const shotDir = path.resolve(__dirname, "screenshot")
-    const command = "grim -o " + shotDir + "/screenshot.png"
+    const command = "grim " + shotDir + "/screenshot.png"
     //var t = new moment()
     const t = new Date()
     const retObj = {
